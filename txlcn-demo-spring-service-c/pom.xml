@@ -21,10 +21,10 @@
             <artifactId>txlcn-demo-common</artifactId>
         </dependency>
 
-        <dependency>
+  <!--      <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-consul-discovery</artifactId>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <build>

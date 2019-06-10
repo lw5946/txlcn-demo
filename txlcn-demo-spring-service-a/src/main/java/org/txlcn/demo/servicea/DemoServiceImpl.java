@@ -25,17 +25,22 @@ public class DemoServiceImpl implements DemoService {
 
     private final DemoMapper demoMapper;
 
-    private final ServiceBClient serviceBClient;
+/*    private final ServiceBClient serviceBClient;
 
-    private final ServiceCClient serviceCClient;
+    private final ServiceCClient serviceCClient;*/
 
     private final RestTemplate restTemplate;
 
-    @Autowired
+/*    @Autowired
     public DemoServiceImpl(DemoMapper demoMapper, ServiceBClient serviceBClient, ServiceCClient serviceCClient, RestTemplate restTemplate) {
         this.demoMapper = demoMapper;
         this.serviceBClient = serviceBClient;
         this.serviceCClient = serviceCClient;
+        this.restTemplate = restTemplate;
+    }*/
+
+    public DemoServiceImpl(DemoMapper demoMapper, RestTemplate restTemplate) {
+        this.demoMapper = demoMapper;
         this.restTemplate = restTemplate;
     }
 
@@ -47,7 +52,8 @@ public class DemoServiceImpl implements DemoService {
         String dResp = restTemplate.getForObject("http://127.0.0.1:12002/rpc?value=" + value, String.class);
 
         // step2. call remote ServiceE
-        String eResp = serviceCClient.rpc(value);
+//        String eResp = serviceCClient.rpc(value);
+        String eResp = restTemplate.getForObject("http://127.0.0.1:12003/rpc?value=" + value, String.class);
 
         // step3. execute local transaction
         Demo demo = new Demo();
