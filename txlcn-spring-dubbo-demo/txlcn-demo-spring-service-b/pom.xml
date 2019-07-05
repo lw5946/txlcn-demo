@@ -3,21 +3,24 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>txlcn-demo</artifactId>
+        <artifactId>txlcn-spring-dubbo-demo</artifactId>
         <groupId>org.txlcn.demo</groupId>
         <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>txlcn-demo-tm</artifactId>
+    <artifactId>txlcn-demo-spring-service-b</artifactId>
 
-    <name>txlcn-demo-tm</name>
+    <name>txlcn-demo-spring-service-b</name>
 
     <dependencies>
 
+        <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
         <dependency>
-            <groupId>com.codingapi.txlcn</groupId>
-            <artifactId>txlcn-tm</artifactId>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.12</version>
         </dependency>
 
     </dependencies>

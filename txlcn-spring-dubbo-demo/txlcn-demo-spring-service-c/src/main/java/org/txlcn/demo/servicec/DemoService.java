@@ -1,4 +1,4 @@
-package org.txlcn.demo.common.dubbo;
+package org.txlcn.demo.servicec;
 
 /**
  * Description:
@@ -6,7 +6,8 @@ package org.txlcn.demo.common.dubbo;
  *
  * @author ujued
  */
-public interface DemoServiceC {
+public interface DemoService {
+
     String insert(String value, String exFlag);
 
     String update(long id, String value, String exFlag);

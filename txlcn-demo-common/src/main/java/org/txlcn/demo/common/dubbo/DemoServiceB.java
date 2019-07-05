@@ -7,5 +7,7 @@ package org.txlcn.demo.common.dubbo;
  * @author ujued
  */
 public interface DemoServiceB {
-    String rpc(String value);
+    String insert(String value, String exFlag);
+
+    String update(long id, String value, String exFlag);
 }

@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>txlcn-demo</artifactId>
-        <groupId>org.txlcn.demo</groupId>
-        <version>1.0.0</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>txlcn-demo-tm</artifactId>
+    <parent>
+        <groupId>org.txlcn.demo</groupId>
+        <artifactId>txlcn-dubbo-demo</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
 
-    <name>txlcn-demo-tm</name>
-
-    <dependencies>
-
-        <dependency>
-            <groupId>com.codingapi.txlcn</groupId>
-            <artifactId>txlcn-tm</artifactId>
-        </dependency>
-
-    </dependencies>
+    <artifactId>txlcn-demo-dubbo-service-a</artifactId>
+    <name>txlcn-demo-dubbo-service-a</name>
 
     <build>
         <plugins>
@@ -30,4 +21,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

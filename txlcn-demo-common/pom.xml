@@ -9,6 +9,7 @@
         <version>1.0.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
+    <packaging>jar</packaging>
     <artifactId>txlcn-demo-common</artifactId>
     <name>demo-common</name>
     <description>demo-common project for Spring Boot</description>
@@ -23,12 +24,12 @@
 
         <dependency>
             <groupId>com.codingapi.txlcn</groupId>
-            <artifactId>txlcn-tc</artifactId>
+            <artifactId>pegasus-txlcn-tc</artifactId>
         </dependency>
 
         <dependency>
             <groupId>com.codingapi.txlcn</groupId>
-            <artifactId>txlcn-txmsg-netty</artifactId>
+            <artifactId>pegasus-txlcn-txmsg-netty</artifactId>
         </dependency>
 
         <dependency>
@@ -56,6 +57,7 @@
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
 
-    </dependencies>
 
+
+    </dependencies>
 </project>

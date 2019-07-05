@@ -12,17 +12,8 @@
 
     <modules>
         <module>txlcn-demo-common</module>
-
-        <module>txlcn-demo-dubbo-service-a</module>
-        <module>txlcn-demo-dubbo-service-b</module>
-        <module>txlcn-demo-dubbo-service-c</module>
-
-        <module>txlcn-demo-spring-service-a</module>
-        <module>txlcn-demo-spring-service-b</module>
-        <module>txlcn-demo-spring-service-c</module>
-
         <module>txlcn-demo-tm</module>
-
+        <module>txlcn-spring-dubbo-demo</module>
     </modules>
 
     <properties>
@@ -32,6 +23,9 @@
         <java.version>1.8</java.version>
 
         <codingapi.txlcn.version>5.0.2.RELEASE</codingapi.txlcn.version>
+        <dubbo.version>2.7.1</dubbo.version>
+        <dubbo.alibaba.version>2.6.5</dubbo.alibaba.version>
+        <nacos.version>0.9.0</nacos.version>
         <springcloud.version>Greenwich.RELEASE</springcloud.version>
         <lombok.version>1.18.0</lombok.version>
     </properties>
@@ -70,7 +64,7 @@
 
             <dependency>
                 <groupId>com.codingapi.txlcn</groupId>
-                <artifactId>txlcn-tc</artifactId>
+                <artifactId>pegasus-txlcn-tc</artifactId>
                 <version>${codingapi.txlcn.version}</version>
             </dependency>
 
@@ -82,7 +76,7 @@
 
             <dependency>
                 <groupId>com.codingapi.txlcn</groupId>
-                <artifactId>txlcn-txmsg-netty</artifactId>
+                <artifactId>pegasus-txlcn-txmsg-netty</artifactId>
                 <version>${codingapi.txlcn.version}</version>
             </dependency>
 
@@ -91,10 +85,6 @@
                 <artifactId>txlcn-demo-common</artifactId>
                 <version>1.0.0</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
-
-
-
 </project>
